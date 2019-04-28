@@ -12,6 +12,33 @@ namespace WebBjola.Controllers
     {
         public IActionResult Index()
         {
+            List<Test> lTest = new List<Test>();
+            for (int i = 0; i < 100; i++)
+            {
+                lTest.Add(new Test("user-" + i.ToString()));
+            }
+               string ERR = "Брат....так!";
+            using (BjolaBase bb = new BjolaBase())
+            {
+                try
+                {
+                    for (int i = 0; i < lTest.Count; i++)
+                        bb.Add(lTest[i]);
+                    bb.SaveChanges();
+                }
+
+                catch (Exception e)
+                {
+                    ERR = e.Message;
+                }
+
+            }
+
+
+
+            ViewBag.data = lTest;    
+            ViewBag.message = ERR;
+
             return View();
         }
 
