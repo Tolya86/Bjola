@@ -7,8 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 using WebBjola.Models;
 using System.Runtime.Serialization.Json;
 
+using Newtonsoft.Json;
 using System.IO;
 using System.Text;
+
 
 namespace WebBjola.Controllers
 {
@@ -16,6 +18,8 @@ namespace WebBjola.Controllers
     {
         public IActionResult Index()
         {
+            List<string> str = new List<string>();
+
             List<Test> lTest = new List<Test>();
             for (int i = 0; i < 100; i++)
             {
@@ -27,7 +31,10 @@ namespace WebBjola.Controllers
                 try
                 {
                     for (int i = 0; i < lTest.Count; i++)
+                    {
                         bb.Add(lTest[i]);
+                        str.Add(JsonConvert.SerializeObject(lTest[i]));
+                    }
                     bb.SaveChanges();
                 }
 
@@ -39,11 +46,12 @@ namespace WebBjola.Controllers
             }
 
             Test t1 = new Test("dfsd");
-           // DataContractJsonSerializer d = new DataContractJsonSerializer(t1.GetType());
-           // MemoryStream m = new MemoryStream();
+
+            // DataContractJsonSerializer d = new DataContractJsonSerializer(t1.GetType());
+            // MemoryStream m = new MemoryStream();
             // Encoding.UTF8.GetBytes();
 
-
+            ViewBag.str = str;
             ViewBag.data = lTest;    
             ViewBag.message = ERR;
 

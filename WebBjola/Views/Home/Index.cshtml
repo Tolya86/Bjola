@@ -12,10 +12,20 @@
 <h1>@ViewBag.message;</h1>
 
 <h3>Add</h3>
+
+<ul>
+    @foreach (string str in ViewBag.str)
+    {
+        <li> @str </li>
+
+    }
+</ul>
+
+
 <ul>
     @foreach (Test test in ViewBag.data)
     {
-        <li>id = @test.id ======== testName = @test.testName </li>
+        <li>id = @test.id ======== testName = @test.testName  ==</li>
 
      }
     </ul>
