@@ -33,6 +33,7 @@ namespace WebBjola.Controllers
                     for (int i = 0; i < lTest.Count; i++)
                     {
                         bb.Add(lTest[i]);
+                        bb.SaveChanges();
                         str.Add(JsonConvert.SerializeObject(lTest[i]));
                     }
                     bb.SaveChanges();
@@ -45,11 +46,7 @@ namespace WebBjola.Controllers
 
             }
 
-            Test t1 = new Test("dfsd");
-
-            // DataContractJsonSerializer d = new DataContractJsonSerializer(t1.GetType());
-            // MemoryStream m = new MemoryStream();
-            // Encoding.UTF8.GetBytes();
+            
 
             ViewBag.str = str;
             ViewBag.data = lTest;    
