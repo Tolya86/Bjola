@@ -5,6 +5,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebBjola.Models;
+using System.Runtime.Serialization.Json;
+
+using System.IO;
+using System.Text;
 
 namespace WebBjola.Controllers
 {
@@ -34,6 +38,10 @@ namespace WebBjola.Controllers
 
             }
 
+            Test t1 = new Test("dfsd");
+           // DataContractJsonSerializer d = new DataContractJsonSerializer(t1.GetType());
+           // MemoryStream m = new MemoryStream();
+            // Encoding.UTF8.GetBytes();
 
 
             ViewBag.data = lTest;    
