@@ -20,3 +20,14 @@ D:\Projects\WebBjola\obj\Debug\netcoreapp2.0\WebBjola.csprojAssemblyReference.ca
 D:\Projects\WebBjola\obj\Debug\netcoreapp2.0\WebBjola.csproj.CoreCompileInputs.cache
 D:\Projects\WebBjola\obj\Debug\netcoreapp2.0\WebBjola.AssemblyInfoInputs.cache
 D:\Projects\WebBjola\obj\Debug\netcoreapp2.0\WebBjola.AssemblyInfo.cs
+C:\D\Code\ASP\Bjola\WebBjola\bin\Debug\netcoreapp2.0\WebBjola.deps.json
+C:\D\Code\ASP\Bjola\WebBjola\bin\Debug\netcoreapp2.0\WebBjola.runtimeconfig.json
+C:\D\Code\ASP\Bjola\WebBjola\bin\Debug\netcoreapp2.0\WebBjola.runtimeconfig.dev.json
+C:\D\Code\ASP\Bjola\WebBjola\bin\Debug\netcoreapp2.0\WebBjola.dll
+C:\D\Code\ASP\Bjola\WebBjola\bin\Debug\netcoreapp2.0\WebBjola.pdb
+C:\D\Code\ASP\Bjola\WebBjola\obj\Debug\netcoreapp2.0\WebBjola.csprojAssemblyReference.cache
+C:\D\Code\ASP\Bjola\WebBjola\obj\Debug\netcoreapp2.0\WebBjola.csproj.CoreCompileInputs.cache
+C:\D\Code\ASP\Bjola\WebBjola\obj\Debug\netcoreapp2.0\WebBjola.AssemblyInfoInputs.cache
+C:\D\Code\ASP\Bjola\WebBjola\obj\Debug\netcoreapp2.0\WebBjola.AssemblyInfo.cs
+C:\D\Code\ASP\Bjola\WebBjola\obj\Debug\netcoreapp2.0\WebBjola.dll
+C:\D\Code\ASP\Bjola\WebBjola\obj\Debug\netcoreapp2.0\WebBjola.pdb
