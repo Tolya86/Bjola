@@ -5,6 +5,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebBjola.Models;
+using System.Runtime.Serialization.Json;
+
+using Newtonsoft.Json;
+using System.IO;
+using System.Text;
+
 
 namespace WebBjola.Controllers
 {
@@ -12,6 +18,40 @@ namespace WebBjola.Controllers
     {
         public IActionResult Index()
         {
+            List<string> str = new List<string>();
+
+            List<Test> lTest = new List<Test>();
+            for (int i = 0; i < 100; i++)
+            {
+                lTest.Add(new Test("user-" + i.ToString()));
+            }
+               string ERR = "Брат....так!";
+            using (BjolaBase bb = new BjolaBase())
+            {
+                try
+                {
+                    for (int i = 0; i < lTest.Count; i++)
+                    {
+                        bb.Add(lTest[i]);
+                        bb.SaveChanges();
+                        str.Add(JsonConvert.SerializeObject(lTest[i]));
+                    }
+                    bb.SaveChanges();
+                }
+
+                catch (Exception e)
+                {
+                    ERR = e.Message;
+                }
+
+            }
+
+            
+
+            ViewBag.str = str;
+            ViewBag.data = lTest;    
+            ViewBag.message = ERR;
+
             return View();
         }
 
