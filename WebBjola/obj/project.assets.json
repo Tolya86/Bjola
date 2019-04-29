@@ -8274,10 +8274,8 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-<<<<<<< HEAD
     "Remotion.Linq/2.2.0": {
       "sha512": "twDAH8dAXXCAf3sRv1Tf94u66eEHvgU75hfn1nn2v4fSWXD50XoDOAk8WpSrbViNuMkB4kN1ElnOGm1c519IHg==",
-=======
     "NuGet.Frameworks/4.0.0": {
       "sha512": "WCkN68c8q+USG+Ot1MmBDH+9DUo5dk7UB0QDMiwCYhrH7ZoFLKFGGNzJ8C3LTR1DvB1LW9BOxKeznnZznKiCTA==",
       "type": "package",
@@ -8295,7 +8293,6 @@
     },
     "Remotion.Linq/2.1.1": {
       "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
->>>>>>> Ivan
       "type": "package",
       "path": "remotion.linq/2.2.0",
       "files": [
